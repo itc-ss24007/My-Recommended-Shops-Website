@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ワッフル Liege - 詳細ページ</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+      }
+      header {
+        background: #6eb7a6;
+        padding: 20px;
+        text-align: center;
+      }
+      header h1 {
+        color: #3e2723;
+        font-size: 2em;
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+      .footer {
+        background: #3e2723;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+      }
+      .carousel-inner img {
+        width: 100%; /* 确保图片宽度占满容器 */
+        height: 50%; /* 高度自动调整，保持原始比例 */
+        object-fit: cover; /* 适应容器的大小 */
+      }
+      .store-info {
+        display: grid;
+        grid-template-columns: 1fr; /* 每一行单独处理 */
+        gap: 10px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .store-info div {
+        display: grid;
+        grid-template-columns: 120px auto; /* 左侧固定宽度，右侧自适应 */
+        gap: 10px;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+      }
+
+      .store-info strong {
+        color: #3e2723;
+        font-weight: bold;
+      }
+
+      .store-info p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ワッフル Liege</h1>
+      <p>美味しいお菓子と、温かいひとときを。</p>
+    </header>
+
+    <div class="container">
+      <h2>店舗情報</h2>
+      <div class="row">
+        <!-- 左侧：店铺图片轮播 -->
+        <div class="col-md-6">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/liegefront1.png"
+                  class="d-block w-100"
+                  alt="ワッフル Liege 店舗1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/liegefront2.png"
+                  class="d-block w-100"
+                  alt="ワッフル Liege 店舗2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/liegefront3.png"
+                  class="d-block w-100"
+                  alt="ワッフル Liege 店舗3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- 右侧：店铺信息 -->
+        <!-- 右侧：店铺信息 -->
+        <div class="col-md-6">
+          <div class="store-info">
+            <div>
+              <strong>店名:</strong>
+              <p>WAFU WAFU WAFFLE LIEGE / リエージュ</p>
+            </div>
+            <div>
+              <strong>住所:</strong>
+              <p>沖縄県 那覇市楚辺1-2-74 1F</p>
+            </div>
+            <div>
+              <strong>電話番号:</strong>
+              <p>098-851-8600</p>
+            </div>
+            <div>
+              <strong>営業時間:</strong>
+              <p>平日 10:00〜18:00 / 土曜 12:00〜18:00</p>
+            </div>
+            <div>
+              <strong>定休日:</strong>
+              <p>日曜、祝祭日、年末年始</p>
+            </div>
+            <div>
+              <strong>決済方法:</strong>
+              <p>キャッシュレス決済利用可能</p>
+            </div>
+            <div>
+              <strong>店内:</strong>
+              <p>テイクアウト専門店</p>
+            </div>
+            <div>
+              <strong>駐車場:</strong>
+              <p>駐車場なし</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- メニュー（テーブル形式） -->
+      <section>
+        <h2>メニュー</h2>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>メニュー名</th>
+              <th>説明</th>
+              <th>価格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ベリーチーズ</td>
+              <td>甘酸っぱいベリーと濃厚なチーズの組み合わせ</td>
+              <td>¥300</td>
+            </tr>
+            <tr>
+              <td>イチジクとハチミツチーズ</td>
+              <td>イチジクとハチミツの甘さがチーズと相性抜群</td>
+              <td>¥300</td>
+            </tr>
+            <tr>
+              <td>ベルギーチョコ</td>
+              <td>贅沢なベルギーチョコレートを使用したワッフル</td>
+              <td>¥280</td>
+            </tr>
+            <tr>
+              <td>ココアチョコ</td>
+              <td>ココア風味のチョコレートワッフル</td>
+              <td>¥280</td>
+            </tr>
+            <tr>
+              <td>クッキー＆クリーム</td>
+              <td>クッキーとクリームの組み合わせ</td>
+              <td>¥280</td>
+            </tr>
+            <tr>
+              <td>りんごちゃん</td>
+              <td>甘いりんごの風味が楽しめるワッフル</td>
+              <td>¥280</td>
+            </tr>
+            <tr>
+              <td>ブルーベリー</td>
+              <td>新鮮なブルーベリーを使用</td>
+              <td>¥260</td>
+            </tr>
+            <tr>
+              <td>つぶあん</td>
+              <td>和風のつぶあんワッフル</td>
+              <td>¥260</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>おすすめの商品</h2>
+        <div class="d-flex align-items-center" style="gap: 20px">
+          <!-- 推荐图片 -->
+          <div>
+            <img
+              src="./images/liegefirst.jpeg"
+              alt="雪もちアイスワッフル"
+              class="img-fluid"
+              style="width: 500px; height: auto; border-radius: 10px"
+            />
+          </div>
+          <!-- 推荐说明 -->
+          <div style="margin-top: 20px">
+            <h3>雪もちアイスワッフル</h3>
+            <p>
+              雪もちアイスワッフルは、トーストした温かいワッフルの中に雪もちバニラアイスをいれました。
+            </p>
+            <h5>おすすめ理由</h5>
+            <p>
+              今年冬天の新商品で、温かいワッフルと冷たいアイスが絶妙に融合した一品です。冬になると、温かくて冷たいものを食べたくなる気分を満たしてくれます。さらに、その可愛らしい形状は小さなお子様にも大人気です！
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>© 2025 ワッフル Liege All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

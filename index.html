@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>おすすめの店</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f8f8f8;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+      .card {
+        background: #ffe0e0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        padding: 15px;
+      }
+      .card img {
+        width: 100%;
+        height: auto; /* 高さを自動調整 */
+        object-fit: contain; /* 画像をトリミングせずに全体表示 */
+        border-radius: 10px;
+        background-color: #fff; /* 背景色を追加（余白対策） */
+      }
+      .card h2 {
+        margin: 10px 0;
+        font-size: 20px;
+      }
+      .card p {
+        font-size: 14px;
+        color: #555;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 15px;
+        margin-top: 10px;
+        background-color: #64b5f6;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .button:hover {
+        background-color: #64b5f6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">おすすめの店</h1>
+
+    <div class="container">
+      <!-- 店舗 1 -->
+      <div class="card">
+        <img src="./images/shop1.png" alt="かめしまぱん" />
+        <h2>かめしまぱん</h2>
+        <p>人気のパン屋さん</p>
+        <a href="./shop_pan.html" class="button">詳細を見る</a>
+      </div>
+
+      <!-- 店舗 2 -->
+      <div class="card">
+        <img src="./images/shop2.png" alt="ワッフル Liege" />
+        <h2>ワッフル Liege</h2>
+        <p>美味しいお菓子やさん</p>
+        <a href="./shop_liege.html" class="button">詳細を見る</a>
+      </div>
+
+      <!-- 店舗 3 -->
+      <div class="card">
+        <img src="./images/shop3.png" alt="愛の食堂" />
+        <h2>愛の食堂</h2>
+        <p>家庭的な夕食が楽しめる食堂</p>
+        <a href="./shop_dinner.html" class="button">詳細を見る</a>
+      </div>
+    </div>
+  </body>
+</html>
