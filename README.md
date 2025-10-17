@@ -12,6 +12,12 @@ HTML / CSS / Bootstrap を使って作成しました。
 
 約 1週間（デザイン構想を含む）
 
+## 💡 工夫した点
+
+- CSS Gridを使って3つの店舗カード（かめしまぱん・ワッフルLiege・愛の食堂）を整ったレイアウト
+- 画像カルーセル（Bootstrap Carousel）を活用し、店舗の雰囲気を直感的に伝えるUI を実現
+- 愛の食堂」ページでは、すき家風メニュー表のようなカードレイアウト を作成
+
 ## 📷 スクリーンショット
 ![topページ](ScreenShot/toppage.png)
 ![かめしまぱんページ](ScreenShot/kameshimapan.png)
